@@ -1,55 +1,67 @@
-
-body, h1, h2, h3, p, ul, li, form {
-    margin: 0;
-    padding: 0;
-}
+/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
-.page {
-    background-color: #fff;
+/* Apply styles to different sections */
+section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+/* Style headings and text */
+h1, h2 {
+    color: #333;
 }
 
-h1 {
-    font-size: 36px;
+/* Style forms */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
     margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
+button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
     color: #fff;
-    font-weight: bold;
+    cursor: pointer;
 }
 
-section {
-    padding: 20px;
+button:hover {
+    background-color: #0056b3;
 }
 
+/* Style gallery */
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-.gallery-image {
-    max-width: 100%;
+.gallery-images img {
+    max-width: 200px;
     height: auto;
-    margin: 10px 0;
+    border-radius: 5px;
 }
+
